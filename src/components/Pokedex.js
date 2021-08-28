@@ -34,12 +34,12 @@ const [ pokemonID, setPokemonId ] = useState(RandomId)
         <div className="pokedex"> 
       <div className="pokedex-left">
         <div className="pokedex-left-top">
-          <div className={`light is-sky is-big ${loading ? 'is-animated':'' }` } /> {/*usando condicionales  ? : agregamos la animacion mientras se cargan los datos*/}
-          <div className="light is-red" />
-          <div className="light is-yellow" />
-          <div className="light is-green" />
+          <div className={`luces cielito principal ${loading ? 'animacion':'' }` } /> {/*usando condicionales  ? : agregamos la animacion mientras se cargan los datos*/}
+          <div className="luces roja" />
+          <div className="luces amarilla" />
+          <div className="luces verde" />
         </div>
-        <div className="pokedex-screen-container">
+        <div className="pokedex-pantalla-container">
           <InfoPoke 
           /*pasar estado de carga y error*/
           pokemon={pokemon}
@@ -48,10 +48,10 @@ const [ pokemonID, setPokemonId ] = useState(RandomId)
         />
         </div>
         <div className="pokedex-left-bottom" >
-          <div className="pokedex-left-bottom-lights">
-            <div className="light is-blue is-medium" />
-            <div className="light is-green is-large" />
-            <div className="light is-orange is-large" />
+          <div className="pokedex-left-bottom-luces">
+            <div className="luces azul mediana" />
+            <div className="luces verde largas"  />
+            <div className="luces naranja largas"/>
           </div>
 
           <BuscarPoke 
@@ -64,7 +64,15 @@ const [ pokemonID, setPokemonId ] = useState(RandomId)
       </div>
       
       <div className="pokedex-right-front" />
-      <div className="pokedex-right-back" />
+  
+      <div className="pokedex-right-back "
+      
+      
+      />
+     
+      
+    
+
     </div>
 
     )

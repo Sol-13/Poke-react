@@ -11,11 +11,11 @@ function InfoPoke({ pokemon, loading, error }){
     
     if(error){
         return (
-          <div className="pokedex-screen">
+          <div className="pokedex-pantalla">
             <img
               src={Error}
               alt="Hubo un error buscando tu pokemon"
-              className="pokedex-no-screen"
+              className="pokedex-no-pantalla"
             />
           </div>
         )
@@ -25,13 +25,13 @@ function InfoPoke({ pokemon, loading, error }){
       
     // Si no hay pokemon o si esta cargando entonces...
     
-    <div className="pokedex-screen">
+    <div className="pokedex-pantalla">
         
         { !pokemon || loading ? 
         <img
           src={Pokebola}
           alt="Aun no hay ningun pokemon"
-          className="pokedex-no-screen"
+          className="pokedex-no-pantalla"
         /> 
         :
       //si esta todo bien devuelve el pokemon

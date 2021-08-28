@@ -16,7 +16,7 @@ function BuscarPoke ({ setPokemonId, setLoading, setError }){
      //Otra solucion podria ser = setError (false) ?
        setError(true)
         setLoading(true)
-    // Podria acrotarse asi? = setPokemonId(window.isNaN(parseInt(pokemon)) ? pokemon.toLowerCase() : pokemon)
+    // Podria acortarse asi? = setPokemonId(window.isNaN(parseInt(pokemon)) ? pokemon.toLowerCase() : pokemon)
         const pokemonID = window.isNaN(parseInt(pokemon)) ? pokemon.toLowerCase() : pokemon
         setPokemonId(pokemonID)
         setPokemon('')
@@ -37,7 +37,7 @@ function BuscarPoke ({ setPokemonId, setLoading, setError }){
         //onChange={handleChange} = version corta, sirve?
         onChange={e => setPokemon(e.target.value)}
         autoComplete="off"/>
-      <input type="submit" className="pokemon-btn" value=""/>
+      <input type="submit" className="pokemon-buscar" value=""/>
     </form>
   )
 }

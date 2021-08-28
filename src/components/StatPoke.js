@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 //Estadisticas de los pokemones
 function StatPoke({ item }){
   return (
